@@ -3,8 +3,8 @@ FROM ubuntu:latest
 LABEL "com.github.actions.name"="Markdown to PDF Generator"
 LABEL "com.github.actions.description"="Create PDF files from Markdown."
 
-RUN apt-get update
 RUN echo 5 | apt-get install -y tzdata
+RUN apt-get update
 RUN apt-get -y install pandoc
 RUN apt-get -y install git
 RUN apt-get -y install texlive-latex-base
