@@ -1,7 +1,4 @@
-FROM ubuntu:xenial
-
-ENV TERM=xterm \
-TZ=Europe/Berlin
+FROM chocko/ubuntu:local
 
 LABEL "com.github.actions.name"="Markdown to PDF Generator"
 LABEL "com.github.actions.description"="Create PDF files from Markdown."
