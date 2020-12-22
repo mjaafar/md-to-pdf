@@ -3,8 +3,7 @@ FROM ubuntu:latest
 LABEL "com.github.actions.name"="Markdown to PDF Generator"
 LABEL "com.github.actions.description"="Create PDF files from Markdown."
 
-ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get -y install tzdata
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install tzdata
 RUN apt-get update
 RUN apt-get -y install pandoc
 RUN apt-get -y install git
