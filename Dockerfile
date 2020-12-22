@@ -11,8 +11,8 @@ RUN apk add --no-cache tzdata
 #RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
 RUN apt-get -y install pandoc
 RUN apt-get -y install git
-RUN apt-get -y install texlive-latex-base
-RUN DEBIAN_FRONTEND="noninteractive"  apt-get -y install texlive-fonts-recommended
+RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install texlive-latex-base
+RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install texlive-fonts-recommended
 
 RUN apt-get -y --no-install-recommends  install pandoc git texlive-latex-base texlive-fonts-recommended
 
