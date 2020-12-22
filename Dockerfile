@@ -1,7 +1,10 @@
+FROM ubuntu:xenial
+
 LABEL "com.github.actions.name"="Markdown to PDF Generator"
 LABEL "com.github.actions.description"="Create PDF files from Markdown."
 
-RUN ln -fs /usr/share/zoneinfo/US/Pacific-New /etc/localtime && dpkg-reconfigure -f noninteractive tzdata
+RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
+#RUN ln -fs /usr/share/zoneinfo/US/Pacific-New /etc/localtime && dpkg-reconfigure -f noninteractive tzdata
 #RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
 RUN apt-get -y install pandoc
 RUN apt-get -y install git
