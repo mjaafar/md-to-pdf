@@ -1,4 +1,5 @@
- ENV TERM=xterm\
+FROM debian
+ENV TERM=xterm\
     TZ=Europe/Berlin\
     DEBIAN_FRONTEND=noninteractive
     
