@@ -16,4 +16,4 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install texlive-fonts-recommende
 RUN apt-get -y --no-install-recommends  install pandoc git texlive-latex-base texlive-fonts-recommended
 
 ADD entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+#RUN chmod +x /entrypoint.sh
